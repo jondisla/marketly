@@ -1,0 +1,386 @@
+/** @format */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f6f8fa;
+  overflow-y: hidden;
+}
+
+.body-title {
+  font-family: "Secular One", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  width: 400px;
+  line-height: 40px;
+}
+
+.sec-text {
+  font-size: 15px;
+}
+
+nav {
+  background: #2f1544;
+  color: white;
+  height: 100px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+nav #logo {
+  font-family: "Secular One", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding-right: 40px;
+}
+
+nav #logo:hover {
+  color: #c26dc2;
+  cursor: pointer;
+}
+
+nav #nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+nav #nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+nav #nav-menu a:hover {
+  color: #c26dc2;
+}
+
+nav #user-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav #user-actions #signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #c26dc2;
+  color: #c26dc2;
+  width: 150px;
+  height: 50px;
+}
+
+nav #user-actions #signup:hover {
+  background: #c26dc2;
+  color: white;
+  cursor: pointer;
+}
+
+#getStartedModal {
+  opacity: 0;
+  z-index: 1;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 60px;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #811d85;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #811d85), color-stop(47%, #2f1544), to(#2f1544));
+  background: linear-gradient(0deg, #811d85 25%, #2f1544 47%, #2f1544 100%);
+  border: 1px solid #c26dc2;
+  border-radius: 5px;
+}
+
+#getStartedModal .modal-title {
+  color: white;
+  font-family: "Secular One", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#getStartedModal .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  width: 300px;
+}
+
+#getStartedModal .getStarted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #c26dc2;
+  color: white;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+#getStartedModal .getStarted:hover {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #c26dc2;
+}
+
+#subscribedSuccess {
+  opacity: 0;
+}
+
+#hero-wrapper {
+  background: url("../img/heroBg.png") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-right-radius: 10%;
+}
+
+#hero-wrapper .page-title {
+  font-family: "Secular One", sans-serif;
+  font-size: 70px;
+  width: 450px;
+}
+
+#hero-wrapper .subtext {
+  padding: 40px 0;
+  line-height: 30px;
+  width: 450px;
+}
+
+#hero-wrapper .sign-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+#hero-wrapper .sign-up .trial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #c26dc2;
+  color: #c26dc2;
+  width: 200px;
+  height: 50px;
+}
+
+#hero-wrapper .sign-up .trial:hover {
+  background: #c26dc2;
+  color: white;
+  cursor: pointer;
+}
+
+#hero-wrapper .sign-up .google-signin {
+  border-radius: 5px;
+  background-color: transparent;
+  background: #31a6f3;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero-wrapper .main-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 40px;
+  float: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#hero-wrapper .main-features .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #c5b9da;
+  background: linear-gradient(79deg, rgba(222, 214, 235, 0.904) 0%, rgba(226, 215, 245, 0.555) 100%);
+  border-radius: 10px;
+  margin: 15px 0;
+  width: 350px;
+  height: 55px;
+  padding: 0 40px;
+}
+
+#hero-wrapper .main-features .feature i {
+  color: #33c2e9;
+  background-color: white;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.feature-active {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+#features {
+  line-height: 30px;
+  height: 100vh;
+  display: none;
+}
+
+#features .body-title {
+  padding-bottom: 40px;
+}
+
+#features #feat-wrapper .feature {
+  padding: 20px;
+  border-radius: 10px;
+  background: #c9aadf;
+  background: linear-gradient(45deg, rgba(201, 170, 223, 0.139575) 25%, rgba(214, 194, 251, 0.552258) 47%, rgba(205, 203, 209, 0.732931) 100%);
+}
+
+#features #feat-wrapper .feature .feature-logo {
+  width: 50px;
+  padding-bottom: 20px;
+}
+
+#features #feat-wrapper .feature .feature-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.bottom-details {
+  display: none;
+  line-height: 30px;
+  height: 100vh;
+}
+
+.bottom-details img {
+  width: 500px;
+}
+
+.bottom-details .body-title {
+  padding-bottom: 20px;
+}
+
+.bottom-details .sec-text {
+  padding-bottom: 20px;
+}
+
+.bottom-details ul {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.bottom-details i {
+  color: #33c2e9;
+  background-color: white;
+  width: 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.read-more {
+  color: #c26dc2;
+  font-weight: bold;
+}
+
+.read-more span {
+  padding-right: 20px;
+}
+
+.read-more i {
+  color: #c26dc2;
+  font-weight: bold;
+}
+
+.read-more a {
+  color: #c26dc2;
+  text-decoration: none;
+}
+
+.read-more a:hover span {
+  padding-right: 10px;
+}
+/*# sourceMappingURL=main.css.map */
