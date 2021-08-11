@@ -3,7 +3,8 @@
 $(document).ready(() => {
   // Nav buttons
 
-  $("#logo").click(() => {
+  if ($(window).width() > 991) {
+  $(".logo").click(() => {
     $("#solution, #about").css({ borderBottom: "none" });
     $("#features, .bottom-details").slideUp("slow");
     $("#hero-wrapper").slideDown("slow");
@@ -32,16 +33,33 @@ $(document).ready(() => {
     $("#features").hide().slideUp("slow");
     $(".bottom-details").slideDown("slow");
   });
+  }
 
+
+  $(window).resize(function() {
+    if ($(window).width() < 991) {
+      location.reload();
+      return;
+    }
+  });
+  
   //Signup to modal
-  $("#signup").click(() => {
+
+  $('.modal-close').click(()=>{
+    $("#getStartedModal").fadeOut(300);
+  })
+
+  $(".signup").click(() => {
+      
     $("#getStartedModal").css({ visibility: "visible" });
+    $("#getStartedModal").fadeIn(300);
     $("#getStartedModal").animate({ opacity: 1 });
   });
 
   $("form").submit((e) => {
       e.preventDefault();
     if ($.trim($("#email").val()) !== "" || $.trim($("#name").val()) !== "") {
+        $(".signup").css({cursor:'not-allowed', background:'gray', color:'#aeafb0',border:'0px'})
         $(".modal-wrapper").fadeOut(200);
         $("#subscribedSuccess").delay(200).animate({ opacity: 1 });
         $("#getStartedModal").delay(2500).fadeOut(300);

@@ -22,6 +22,10 @@ body {
   font-size: 15px;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 nav {
   background: #2f1544;
   color: white;
@@ -30,14 +34,14 @@ nav {
   padding-top: 20px;
 }
 
-nav #logo {
+nav .logo {
   font-family: "Secular One", sans-serif;
   font-weight: bold;
   font-size: 25px;
   padding-right: 40px;
 }
 
-nav #logo:hover {
+nav .logo:hover {
   color: #c26dc2;
   cursor: pointer;
 }
@@ -74,7 +78,7 @@ nav #user-actions {
           align-items: center;
 }
 
-nav #user-actions #signup {
+nav #user-actions .signup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +96,7 @@ nav #user-actions #signup {
   height: 50px;
 }
 
-nav #user-actions #signup:hover {
+nav #user-actions .signup:hover {
   background: #c26dc2;
   color: white;
   cursor: pointer;
@@ -126,6 +130,19 @@ nav #user-actions #signup:hover {
   background: linear-gradient(0deg, #811d85 25%, #2f1544 47%, #2f1544 100%);
   border: 1px solid #c26dc2;
   border-radius: 5px;
+}
+
+#getStartedModal .modal-close {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+#getStartedModal .modal-close:hover {
+  cursor: pointer;
+  color: #c26dc2;
 }
 
 #getStartedModal .modal-title {
@@ -382,5 +399,121 @@ nav #user-actions #signup:hover {
 
 .read-more a:hover span {
   padding-right: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  body {
+    overflow-y: visible;
+  }
+  .mobile-nav {
+    background: #2f1544;
+    color: white;
+    height: 80px;
+    width: 100%;
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+  }
+  .mobile-nav i {
+    font-size: 30px;
+  }
+  .mobile-nav i:hover {
+    color: #c26dc2;
+    cursor: pointer;
+  }
+  .mobile-nav .logo {
+    font-family: "Secular One", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding-right: 40px;
+  }
+  .mobile-nav .logo:hover {
+    color: #c26dc2;
+    cursor: pointer;
+  }
+  .mobile-nav .signup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #c26dc2;
+    color: #c26dc2;
+    width: 150px;
+    height: 50px;
+  }
+  .mobile-nav .signup:hover {
+    background: #c26dc2;
+    color: white;
+    cursor: pointer;
+  }
+  nav {
+    display: none;
+  }
+  .hero-wrapper {
+    visibility: visible;
+    display: block;
+  }
+  .hero-wrapper .page-title,
+  .hero-wrapper .subtext {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero-wrapper .main-features {
+    width: 100%;
+  }
+  #features {
+    padding-top: 100px;
+    visibility: visible;
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+  #features .body-title {
+    width: 100%;
+  }
+  #features .feature {
+    margin: 20px;
+  }
+  #features .feature .feature-logo {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bottom-details {
+    padding: 100px 0;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .bottom-details .body-title {
+    padding-top: 20px;
+    width: 100%;
+  }
+  .bottom-details .img,
+  .bottom-details .bottom-features,
+  .bottom-details .read-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
