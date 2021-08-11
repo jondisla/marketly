@@ -35,6 +35,12 @@ $(document).ready(() => {
   });
   }
 
+  //readmore
+  $('#read-more').click(()=>{
+      $('#read-more, .arrow').fadeOut('fast');
+      $('#coming-soon').fadeIn('slow');
+  })
+
 
   $(window).resize(function() {
     if ($(window).width() < 991) {

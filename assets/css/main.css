@@ -378,27 +378,29 @@ nav #user-actions .signup:hover {
   margin-right: 20px;
 }
 
+#coming-soon {
+  display: none;
+  color: red;
+  text-transform: uppercase;
+}
+
 .read-more {
   color: #c26dc2;
   font-weight: bold;
 }
 
-.read-more span {
+.read-more #read-more {
   padding-right: 20px;
+}
+
+.read-more #read-more:hover {
+  cursor: pointer;
+  padding-right: 10px;
 }
 
 .read-more i {
   color: #c26dc2;
   font-weight: bold;
-}
-
-.read-more a {
-  color: #c26dc2;
-  text-decoration: none;
-}
-
-.read-more a:hover span {
-  padding-right: 10px;
 }
 
 @media only screen and (max-width: 991px) {
