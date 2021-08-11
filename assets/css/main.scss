@@ -325,8 +325,16 @@ nav {
 //MEDIA QUERIES
 
 @media only screen and (max-width: 991px) {
+  html{
+    width:100% !important;
+  }
   body {
+    width:100% !important;
     overflow-y: visible;
+  }
+  #getStartedModal{
+    width:80% !important;
+    margin: 0 auto;
   }
   .mobile-nav {
     background: #2f1544;
@@ -377,21 +385,23 @@ nav {
   .hero-wrapper {
     visibility: visible;
     display: block;
+    height:100% !important;
+    
     .page-title,
     .subtext {
-      width: 100%;
+      width:100% !important;
       margin: 0 auto;
       text-align: center;
     }
     .main-features {
-      width: 100%;
+      width:100% !important;
     }
   }
   #features {
     padding-top: 100px;
     visibility: visible;
     display: block;
-    width: 100%;
+    width:100% !important;
     text-align: center;
     height: 100%;
     .body-title {
@@ -409,11 +419,11 @@ nav {
     padding: 100px 0;
     visibility: visible;
     display: flex;
-    width: 100%;
+    width:100% !important;
     height: 100%;
     .body-title {
       padding-top: 20px;
-      width: 100%;
+      width:100% !important;
     }
     .img,
     .bottom-features,
